@@ -5,6 +5,8 @@
 -----------------------------------------------------------------------------------------
 -- This script Expands column TEST_NUMBER in NS_EVENTS_LINES from 6 to 40 Characters   --
 -----------------------------------------------------------------------------------------
+-- Comment line added for demonstrating updating a file in a GitHub Repository Jim Slanker
+-- created Thursday June 9th 2022                                                      --
 set serveroutput on
 set define on
 
