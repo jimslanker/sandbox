@@ -1,0 +1,60 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+04-FEB-2022 08:37:27 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> Correct issue with missing Out of Spec Emails on Test Results
+>>
+>> Log file = IMPL_STCR7639_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Drop  Globl Temp Table GTT_TE_TEST_RESULTS                          >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Table dropped.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #2                                                             >>
+>> Create Global Temp Table GTT_TE_TEST_RESULTS with option to Preserve>>
+>> rows on COMMIT instead of DELETING                                  >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Table created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #3                                                             >>
+>> Grant full access to STAR_USER on Table GTT_TE_TEST_RESULTS         >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Grant succeeded.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #4                                                             >>
+>> Compile Package Body PK_TEST_RESULTS with change to delete from     >>
+>> Global Temp Table after processing for outbound emails              >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Package body created.
+
+>> End of STCR7639_implement Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+04-FEB-2022 08:37:28 PM                                                         
+

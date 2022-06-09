@@ -1,0 +1,120 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+18-OCT-2021 09:14:40 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> This script Creates new DISPOSTION_DATE in the Non Standard Events
+>>
+>> Log file = IMPL_STCR7587_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Alter Table NS_PIECE_DISPOSITIONS add new column                    >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>Alter Table NS_PIECE_DISPOSITIONS
+
+Table altered.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #2                                                             >>
+>> Update Trigger NSPCDI_BI_CR                                         >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Trigger created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #3                                                            >>
+>> Update Trigger NSPCDI_BUD_R                                         >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Trigger created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #4                                                             >>
+>> Update View NS_PIECE_DISPOSITIONS_VW                                >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+View dropped.
+
+
+View created.
+
+
+Synonym dropped.
+
+
+Synonym created.
+
+GRANT SELECT ON STAR.NS_PIECE_DISPOSITIONS_VW TO DISCOVERER_SELECT
+                                                 *
+ERROR at line 1:
+ORA-01917: user or role 'DISCOVERER_SELECT' does not exist 
+
+
+GRANT SELECT ON STAR.NS_PIECE_DISPOSITIONS_VW TO EXT_TABLEAU
+                                                 *
+ERROR at line 1:
+ORA-01917: user or role 'EXT_TABLEAU' does not exist 
+
+
+GRANT SELECT ON STAR.NS_PIECE_DISPOSITIONS_VW TO EXT_TMT_TABLEAU
+                                                 *
+ERROR at line 1:
+ORA-01917: user or role 'EXT_TMT_TABLEAU' does not exist 
+
+
+GRANT SELECT ON STAR.NS_PIECE_DISPOSITIONS_VW TO E_TABLEAU
+                                                 *
+ERROR at line 1:
+ORA-01917: user or role 'E_TABLEAU' does not exist 
+
+
+GRANT SELECT ON STAR.NS_PIECE_DISPOSITIONS_VW TO STAR_DISCOVERER
+                                                 *
+ERROR at line 1:
+ORA-01917: user or role 'STAR_DISCOVERER' does not exist 
+
+
+GRANT SELECT ON STAR.NS_PIECE_DISPOSITIONS_VW TO STAR_VIEW_ONLY
+                                                 *
+ERROR at line 1:
+ORA-01917: user or role 'STAR_VIEW_ONLY' does not exist 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #5                                                             >>
+>> Update View NS_PIECE_DISPOSITIONS_BIVW                              >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+View created.
+
+
+Synonym created.
+
+GRANT SELECT ON STAR.NS_PIECE_DISPOSITIONS_BIVW TO EXT_TMT_PWRBI
+                                                   *
+ERROR at line 1:
+ORA-01917: user or role 'EXT_TMT_PWRBI' does not exist 
+
+
+>> End of STCR7587_implement Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+18-OCT-2021 09:14:44 PM                                                         
+

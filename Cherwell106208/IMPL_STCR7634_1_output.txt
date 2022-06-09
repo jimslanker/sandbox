@@ -1,0 +1,37 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+18-OCT-2021 09:14:38 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> This script adds 1 minutes delay to start of SAP interface to STAR for Standby DB
+>>
+>> Log file = IMPL_STCR7634_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Update Package Body PK_STAR_WEBSERVICES add 1 minute delay          >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Package body created.
+
+>> End of STCR7634_implement Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+18-OCT-2021 09:14:39 PM                                                         
+

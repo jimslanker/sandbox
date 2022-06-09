@@ -1,0 +1,72 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+04-FEB-2022 08:36:39 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> Correct issue with Toronto Batch Tracking Extracts from not running
+>> Also includes a new procedure to extract order requirements for site 23
+>>
+>> Log file = IMPL_STCR7563_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Compile Package Spec and Body PK_TPT_EXTRACT update the running     >>
+>> flag to N for Toronto Site 11                                       >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Package created.
+
+
+Package body created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #2                                                             >>
+>> Update the Batch Tracking Update Control table to set Site 11       >>
+>> Running flag to N   STCR 7563                                       >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1 row updated.
+
+
+Commit complete.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #3                                                             >>
+>> Insert into the Batch Tracking Update Control table for site 23     >>
+>> Order Requirement extract    STCR 7563                              >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1 row created.
+
+
+Commit complete.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #4                                                             >>
+>> Submit new DBMS Job for processing Site 23 Order Requirements       >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Job Number is: 62                                                               
+
+PL/SQL procedure successfully completed.
+
+>> End of STCR7563_implement Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+04-FEB-2022 08:36:39 PM                                                         
+

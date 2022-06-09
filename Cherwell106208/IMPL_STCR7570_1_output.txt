@@ -1,0 +1,38 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+18-OCT-2021 09:14:37 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> This script Expands column TEST_NUMBER in NS_EVENTS_LINES from 6 to 40 Characters
+>>
+>> Log file = IMPL_STCR7570_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Alter table NS_EVENT_LINES                                          >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>Alter Table NS_EVENT_LINES
+
+Table altered.
+
+>> End of STCR7570_implement Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+18-OCT-2021 09:14:38 PM                                                         
+

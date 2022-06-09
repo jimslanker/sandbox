@@ -1,0 +1,89 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+04-FEB-2022 08:35:52 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> Creates two new views for test piece tracking / sample status
+>> TE_TEST_PIECES_BIVW
+>> TE_TEST_PIECE_DETAILS_BIVW
+>>
+>> Log file = IMPL_STCR7635_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Create new View TE_TEST_PIECES_BIVW                                 >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+View created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #2                                                             >>
+>> Create new View TE_TEST_PIECE_DETAILS_BIVW                          >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+View created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #3                                                             >>
+>> Create Public Synonyms TE_TEST_PIECES_BIVW                          >>
+>>                        TE_TEST_PIECE_DETAILS_BIVW                   >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Synonym created.
+
+
+Synonym created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #4                                                             >>
+>> Grant SELECT to EXT_TMT_PWRBI on new tables                         >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+GRANT SELECT ON STAR.TE_TEST_PIECES_BIVW TO EXT_TMT_PWRBI
+                                            *
+ERROR at line 1:
+ORA-01917: user or role 'EXT_TMT_PWRBI' does not exist 
+
+
+GRANT SELECT ON STAR.TE_TEST_PIECE_DETAILS_BIVW TO EXT_TMT_PWRBI
+                                                   *
+ERROR at line 1:
+ORA-01917: user or role 'EXT_TMT_PWRBI' does not exist 
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #5                                                             >>
+>> Grant SELECT to DEVELOPER_READ_ONLY on new tables                   >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+GRANT SELECT ON STAR.TE_TEST_PIECES_BIVW TO DEVELOPER_READ_ONLY
+                                            *
+ERROR at line 1:
+ORA-01917: user or role 'DEVELOPER_READ_ONLY' does not exist 
+
+
+GRANT SELECT ON STAR.TE_TEST_PIECE_DETAILS_BIVW TO DEVELOPER_READ_ONLY
+                                                   *
+ERROR at line 1:
+ORA-01917: user or role 'DEVELOPER_READ_ONLY' does not exist 
+
+
+>> End of STCR7635_implement Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+04-FEB-2022 08:35:52 PM                                                         
+

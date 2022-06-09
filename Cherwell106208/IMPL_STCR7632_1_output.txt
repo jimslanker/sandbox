@@ -1,0 +1,40 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+18-OCT-2021 09:14:39 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> This script Resolves issue with Upload SAP Schedule Adherence Report
+>>
+>> Log file = IMPL_STCR7632_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Update Trigger RSAIMP_BIUD_R to not assign Home Site                >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Trigger dropped.
+
+
+Trigger created.
+
+>> End of STCR7632_implement Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+18-OCT-2021 09:14:40 PM                                                         
+

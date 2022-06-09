@@ -1,0 +1,48 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+10-MAY-2022 12:27:00 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> Update Package PK_MELT add new function fnGetMeltSite
+>> Update View TE_TEST_RESULTS_UNITED_MILL_VIEW to include site 23 (Witton)
+>>
+>> Log file = IMPL_STCR7663_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Compile Package Body PK_MELT includes new function                              >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Package created.
+
+
+Package body created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #2                                                             >>
+>> Update View TE_TEST_RESULTS_UNITED_MILL_VIEW to include site 23     >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+View created.
+
+>> End of STCR7663_implement Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+10-MAY-2022 12:27:01 PM                                                         
+

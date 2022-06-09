@@ -1,0 +1,47 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+10-MAY-2022 12:24:30 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Compile Package Body PK_MELT Restore previous version               >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Package created.
+
+
+Package body created.
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> Restore view TE_TEST_RESULTS_UNITED_MILL_VIEW to previous version
+>>
+>> Log file = RLBK_STCR7663_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Restore View TE_TEST_RESULTS_UNITED_MILL_VIEW                    >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+View created.
+
+>> End of STCR7663 Rollback Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+10-MAY-2022 12:24:32 PM                                                         
+

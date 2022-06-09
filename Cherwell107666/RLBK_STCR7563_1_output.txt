@@ -1,0 +1,51 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+04-FEB-2022 08:36:24 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> Restore Package PK_TPT_EXTRACT to previos version
+>>
+>> Log file = RLBK_STCR7563_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Compile Package Spec and Body PK_TPT_EXTRACT to previous version    >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Package created.
+
+
+Package body created.
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #2                                                             >>
+>> Delete the Batch Tracking Update Control table for site 23          >>
+>> Order Requirement extract    STCR 7563                              >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+1 row deleted.
+
+
+Commit complete.
+
+>> End of STCR7563 Rollback Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+04-FEB-2022 08:36:24 PM                                                         
+

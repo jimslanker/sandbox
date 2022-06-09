@@ -1,0 +1,37 @@
+
+Session altered.
+
+
+SYSDATE                                                                         
+-----------------------                                                         
+13-MAY-2022 12:45:51 PM                                                         
+
+
+INSTANCE_NAME                                                                   
+----------------                                                                
+HOST_NAME                                                                       
+----------------------------------------------------------------                
+DSTAR                                                                           
+tdcx-lxstdb15                                                                   
+                                                                                
+
+
+>>---------------------------------------------------------------------<<
+>>
+>> Update Package PK_TECH_EDIT to use rounding to prevent out of spec emails
+>>
+>> Log file = IMPL_STCR7578_1_output.txt
+>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>> Step #1                                                             >>
+>> Compile Package Body PK_TECH_EDIT                                   >>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Package body created.
+
+>> End of IMPL_STCR7578_1 Implementation Script
+
+SYSDATE                                                                         
+-----------------------                                                         
+13-MAY-2022 12:45:51 PM                                                         
+
